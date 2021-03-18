@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/348947266.svg)](https://zenodo.org/badge/latestdoi/348947266)
+
 # Extended convolutional layers
 
 This repository provides an preliminary Julia implementation for extended convolutional layers. For a short technical report on extended convolutional layers click [here](https://github.com/slimgroup/ExtendedConv.jl/blob/main/doc/report.pdf).
