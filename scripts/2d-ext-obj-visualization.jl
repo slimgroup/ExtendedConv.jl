@@ -137,7 +137,7 @@ for fig_idx = 1:num_figs
         vmin=0.0, vmax=1f0)
     title("Loss landscape")
     colorbar(fraction=0.057, pad=0.01, format=sfmt)
-    scatter(
+    PyPlot.scatter(
         βs[argmin(loss)[2]], αs[argmin(loss)[1]], s=30.0,
         color="#b80000", marker="*"
     )
@@ -151,7 +151,7 @@ for fig_idx = 1:num_figs
         vmin=0.0, vmax=1f0)
     title("Extended loss landscape")
     colorbar(fraction=0.057, pad=0.01, format=sfmt)
-    scatter(
+    PyPlot.scatter(
         βs[argmin(loss_ext)[2]], αs[argmin(loss_ext)[1]], s=30.0,
         color="#b80000", marker="*"
     )
@@ -165,7 +165,7 @@ for fig_idx = 1:num_figs
         vmin=-1f-1, vmax=1f0)
     title("Loss landscape")
     cb = colorbar(fraction=0.057, pad=0.01, format=sfmt)
-    scatter(
+    PyPlot.scatter(
         βs[argmin(loss)[2]], αs[argmin(loss)[1]], s=30.0,
         color="#b80000", marker="*"
     )
@@ -179,7 +179,7 @@ for fig_idx = 1:num_figs
         vmin=-1f-1, vmax=1f0)
     title("Extended loss landscape")
     colorbar(fraction=0.057, pad=0.01, format=sfmt)
-    scatter(
+    PyPlot.scatter(
         βs[argmin(loss_ext)[2]], αs[argmin(loss_ext)[1]], s=30.0,
         color="#b80000", marker="*"
     )

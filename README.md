@@ -1,6 +1,6 @@
 # Extended convolutional layers
 
-This repository provides an preliminary Julia implementation for extended convolutional layers.
+This repository provides an preliminary Julia implementation for extended convolutional layers. For a short technical report on extended convolutional layers click [here](https://github.com/slimgroup/ExtendedConv.jl/blob/main/doc/report.pdf).
 
 To start running the examples, clone the repository:
 

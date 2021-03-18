@@ -3,7 +3,7 @@
 # Date: December 2020
 # Copyright: Georgia Institute of Technology, 2020
 
-module LossLandscape
+module ExtendedConv
 
 using DrWatson
 import Pkg; Pkg.instantiate()
