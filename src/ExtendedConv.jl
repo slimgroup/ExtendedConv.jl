@@ -5,8 +5,16 @@
 
 module ExtendedConv
 
-using DrWatson
-import Pkg; Pkg.instantiate()
+using Flux
+using LinearAlgebra
+using PyPlot: Figure
+using JOLI
+using SetIntersectionProjection
+using SparseArrays
+using Optim
+
+import Base.+, Base.*
+import DrWatson: _wsave
 
 # Utilities
 include("./utils/savefig.jl")

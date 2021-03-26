@@ -4,12 +4,6 @@
 
 export filter_normalization, sol_traj
 
-import Base.+, Base.*
-
-using Flux
-using LinearAlgebra
-
-
 function filter_normalization(theta::Flux.Params)
 
     d = deepcopy(theta)

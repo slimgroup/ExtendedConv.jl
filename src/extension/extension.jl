@@ -6,14 +6,6 @@ export extended_conv_op
 export var_proj_optim
 export var_proj_op
 
-using Flux
-using LinearAlgebra
-using JOLI
-using SetIntersectionProjection
-using SparseArrays
-using Optim
-
-
 mutable struct Conv_cds
     diagonals
     offsets
