@@ -8,19 +8,22 @@ To start running the examples, clone the repository:
 
 ```bash
 $ git clone https://github.com/slimgroup/ExtendedConv.jl
+$ cd ExtendedConv.jl/
 ```
 
 ## Installation
 
-This repository is based on [DrWatson.jl](https://github.com/JuliaDynamics/DrWatson.jl). Before running examples, install `DrWatson.jl` by:
+Before starting installing the required packages in Julia, make sure you have `matplotlib` and `seaborn` installed in your Python environment since we depend on `PyPlot.jl` and `Seaborn.jl` for creating figures.
 
-```julia
-pkg> add DrWatson
+Next, run the following commands in the command line to install the necessary libraries and setup the Julia project:
+
+```bash
+julia -e 'using Pkg; Pkg.add("DrWatson")'
+julia -e 'using Pkg; Pkg.Registry.add(RegistrySpec(url = "https://github.com/slimgroup/SLIMregistryJL.git"))'
+julia --project -e 'using Pkg; Pkg.instantiate()'
 ```
 
-The only other manual installation is to make sure you have `matplotlib` and `seaborn` installed in your Python environment since we depend on `PyPlot.jl` and `Seaborn.jl` for creating figures.
-
-The necessary dependencies will be installed upon running your first experiment.
+After the last line, the necessary dependencies will be installed.
 
 ## Visualization loss landscape
 
