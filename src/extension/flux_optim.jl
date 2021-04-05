@@ -1,7 +1,5 @@
 export loss_flux
 
-using Flux
-
 function loss_flux(func_val, dw, w, z, y, G)
 
 
